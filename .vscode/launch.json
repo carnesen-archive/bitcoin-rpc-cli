@@ -7,11 +7,20 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch tests",
+      "name": "tests",
       "program": "${workspaceFolder}/node_modules/.bin/ts-node",
       "args": [
         "${workspaceFolder}/node_modules/.bin/jest"
       ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "cli",
+      "program": "${workspaceFolder}/node_modules/.bin/ts-node",
+      "args": [
+        "src/index.ts"
+      ],
     },
   ]
 }
