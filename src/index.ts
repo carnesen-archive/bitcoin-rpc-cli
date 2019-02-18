@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { cli, leaf, option } from '@carnesen/cli';
 import { createBitcoinRpc } from '@carnesen/bitcoin-rpc';
 import { readRpcHref } from '@carnesen/bitcoin-rpc-href';

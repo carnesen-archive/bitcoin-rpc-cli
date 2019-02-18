@@ -2,7 +2,6 @@
   "name": "@carnesen/bitcoin-rpc-cli",
   "description": "A Node.js command-line client for bitcoin's remote procedure call (RPC) interface",
   "version": "0.0.0-0",
-  "private": true,
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "bin": {
@@ -20,7 +19,7 @@
     "test:unit": "jest --coverage src",
     "test:watch": "npm run test:unit -- --watch",
     "preversion": "npm test && npm run build:clean",
-    "postversion": "npm publish"
+    "postversion": "npm publish --access public"
   },
   "dependencies": {
     "@carnesen/bitcoin-rpc": "0.0.0",

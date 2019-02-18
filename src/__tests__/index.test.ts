@@ -29,6 +29,15 @@ describe(subject.commandName, () => {
     expect(result.connections).toBe(0);
   });
 
+  it('runs bitcoin rpc commands', async () => {
+    const result = await cli(
+      `--method getnetworkinfo --configFilePath ${
+        regtestService.configFilePath
+      } --format json`,
+    );
+    expect(result).toMatch('"connections": 0');
+  });
+
   it('gives usage if --help is given', async () => {
     expect(await cliThrows('--help')).toMatch('Usage');
   });
