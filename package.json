@@ -1,7 +1,7 @@
 {
   "name": "@carnesen/bitcoin-rpc-cli",
   "description": "A Node.js command-line client for bitcoin's remote procedure call (RPC) interface",
-  "version": "0.0.0-0",
+  "version": "0.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "bin": {
