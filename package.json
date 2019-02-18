@@ -6,7 +6,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "bin": {
-    "bitcoin-rpc": "lib/cli.js"
+    "bitcoin-rpc": "lib/index.js"
   },
   "engines": {
     "node": ">=8.0.0"
